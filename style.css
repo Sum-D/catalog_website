@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c, #ffb347, #84fab0);
+    background-size: 400% 400%;
+    animation: gradientBG 8s infinite alternate linear;
+    padding: 20px;
+    color: #fff;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+
+/* Navbar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+nav h2 {
+    font-size: 26px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 6px 14px;
+    background: #ffffff33;
+    border-radius: 12px;
+    transition: .3s;
+}
+
+nav a:hover {
+    background: #ffffff88;
+    transform: translateY(-4px);
+}
+
+
+/* Header */
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 45px;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, .25);
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+
+/* Catalog */
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #ffffffdd;
+    color: #222;
+    padding: 18px;
+    border-radius: 18px;
+    text-align: center;
+    transition: .3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, .25);
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.04);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .35);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #ff006e;
+}
+
+.card p {
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    margin-top: 35px;
+    padding-top: 10px;
+    font-size: 15px;
+    opacity: .9;
+}
